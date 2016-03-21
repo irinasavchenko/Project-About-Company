@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "AdventPro-Medium";
+    src: url("./fonts/Advent_Pro/AdventPro-Medium.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AdventPro-Bold";
+    src: url("./fonts/Advent_Pro/AdventPro-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("./fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.fl_left {
+    float: left;
+}
+
+
+ header {
+    height: 80px;
+    background-color: #000;
+    font-family: "AdventPro-Bold";
+    text-transform: uppercase;
+}
+
+ header .content_header {
+     width: 1170px;
+     height: 100%;
+ }
+
+ header ul, li {
+    height: 100%;
+}
+ header li a {
+    font-size: 24px;
+    color: #e5e5e5;
+    height: 100%;
+    line-height: 90px;
+    padding: 5px 15px;
+}
+
+ header ul.nav li a:hover {
+    background-color: #000;
+    text-decoration: underline;
+    color: #e5e5e5;
+}
+
+ header .logo a {
+     padding-top: 20px;
+ }
+
+header .name_company span {
+    font-size: 34px;
+    color: #008287;
+}
+
+header .name_company span:first-child {
+    color: #fff;
+}
+
+header .best_solution span {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    color: #fff;
+
+}
+
+#carousel-example-generic img{
+    width: 1920px;
+    height: 600px;
+    border-bottom: 5px solid #00aba9;
+    border-top: 5px solid #00aba9;
+}
+
+#carousel-example-generic .carousel-caption p {
+    font-family: "AdventPro-Medium";
+    font-size: 72px;
+    color: #00aba9;
+
+}
+
+#carousel-example-generic .carousel-caption {
+    bottom: 35%;
+}
+
+@media screen and (max-width: 1516px) {
+    #carousel-example-generic .carousel-caption {
+        bottom: 25%;
+    }
+}
+
+#carousel-example-generic .carousel-caption p span {
+    background-color: #008287;
+    padding: 13px 25px;
+    color: #fff;
+    font-family: "AdventPro-Bold";
+}
+
+#carousel-example-generic a.carousel-control span {
+    border: 1px solid #00aba9;
+    background-color: #00aba9;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.about_company, .our_services {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.our_services {
+    padding-bottom: 55px;
+    background-color: #008287;
+}
+.about_company .content_about_company, .our_services .content_our_services, .blog_news .content_blog_news {
+    width: 1170px;
+}
+
+.about_company h1, .our_services h1, .blog_news h1{
+    font-family: "AdventPro-Bold";
+    color: #010101;
+    text-transform: uppercase;
+    font-size: 38px;
+}
+
+.about_company h1>span, .our_services h1>span, .blog_news h1>span{
+    color: #008287;
+    font-family: "AdventPro-Medium";
+}
+
+.our_services h1>span {
+    color: #fff;
+}
+
+.about_company p, .our_services p, .blog_news p {
+    font-family: "OpenSans-Regular";
+    color: #555;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 50px;
+}
+
+.our_services p {
+    color: #fff;
+}
+
+.our_services .service_1 {
+
+    padding-left: 0;
+    padding-bottom: 45px;
+    text-align: left;
+}
+
+.our_services .service_1 h1 {
+    font-size: 30px;
+    display: inline;
+    line-height: 20px;
+}
+
+.our_services .service_1 p {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 2px;
+    margin-top: 0;
+    max-width: 280px;
+}
+
+.our_services .container-fluid {
+    padding: 50px 0 0 0;
+}
+
+.our_services  .icon {
+    background: url(../images/img_services_border.png) no-repeat;
+    width: 81px;
+    height: 81px;
+    text-align: center;
+    line-height: 109px;
+}
+
+.our_services .icon_wrapper {
+    margin-right: 18px;
+}
+
+.our_services .icon i {
+    color: white;
+}
+
+.map iframe {
+    display: block;
+    float: left;
+}
+
+.map .address {
+    float: left;
+}
+
+.footer {
+    clear: both;
+}
+
+
+
