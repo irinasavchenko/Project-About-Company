@@ -1,13 +1,13 @@
 @font-face {
     font-family: "AdventPro-Medium";
-    src: url("./fonts/Advent_Pro/AdventPro-Medium.ttf") format('truetype');
+    src: url("/fonts/Advent_Pro/AdventPro-Medium.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "AdventPro-Bold";
-    src: url("./fonts/Advent_Pro/AdventPro-Bold.ttf") format('truetype');
+    src: url("/fonts/Advent_Pro/AdventPro-Bold.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: "OpenSans-Regular";
-    src: url("./fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
+    src: url("/fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -42,7 +42,6 @@ body {
 .fl_left {
     float: left;
 }
-
 
  header {
     height: 80px;
@@ -104,6 +103,7 @@ header .best_solution span {
     font-family: "AdventPro-Medium";
     font-size: 72px;
     color: #00aba9;
+    text-transform: uppercase;
 
 }
 
@@ -113,8 +113,17 @@ header .best_solution span {
 
 @media screen and (max-width: 1516px) {
     #carousel-example-generic .carousel-caption {
-        bottom: 25%;
+        bottom: 35%;
     }
+}
+
+@media screen and (min-width: 768px){
+    #carousel-example-generic .carousel-caption {
+        left: 0;
+        right: 0;
+    }
+
+
 }
 
 #carousel-example-generic .carousel-caption p span {
@@ -133,7 +142,16 @@ header .best_solution span {
     line-height: 36px;
 }
 
-.about_company, .our_services {
+
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left {
+    left: 20px;
+}
+
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+    right: 20px;
+}
+
+.about_company, .our_services, .blog_news, .contact_us {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -143,32 +161,61 @@ header .best_solution span {
     padding-bottom: 55px;
     background-color: #008287;
 }
-.about_company .content_about_company, .our_services .content_our_services, .blog_news .content_blog_news {
-    width: 1170px;
+
+.content_contact_us {
+    margin-bottom: 50px;
+}
+.about_company .content_about_company, .our_services .content_our_services, .blog_news .content_blog_news, .contact_us .content_contact_us, .map .content_map, .footer .content_footer {
+   width: 1170px;
 }
 
-.about_company h1, .our_services h1, .blog_news h1{
+.about_company h1, .our_services h1, .blog_news h1, h2, h3, .contact_us h1{
     font-family: "AdventPro-Bold";
     color: #010101;
     text-transform: uppercase;
     font-size: 38px;
 }
 
-.about_company h1>span, .our_services h1>span, .blog_news h1>span{
+.about_company h1>span, .our_services h1>span, .blog_news h1>span, .contact_us h1>span {
     color: #008287;
     font-family: "AdventPro-Medium";
+}
+
+.contact_us h1>span {
+    color: #fff;
 }
 
 .our_services h1>span {
     color: #fff;
 }
 
-.about_company p, .our_services p, .blog_news p {
+.about_company p, .our_services p, .blog_news p, .contact_us p {
     font-family: "OpenSans-Regular";
     color: #555;
     font-size: 20px;
     line-height: 28px;
     margin-top: 50px;
+}
+
+.contact_us p {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .about_company .content_about_company {
+        width: 882px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .about_company .content_about_company {
+        width: 441px;
+    }
+}
+
+
+.blog_news p {
+    margin-bottom: 50px;
 }
 
 .our_services p {
@@ -177,7 +224,8 @@ header .best_solution span {
 
 .our_services .service_1 {
 
-    padding-left: 0;
+    padding-left: 15px;
+    padding-right: 0;
     padding-bottom: 45px;
     text-align: left;
 }
@@ -200,6 +248,11 @@ header .best_solution span {
     padding: 50px 0 0 0;
 }
 
+.our_services .container-fluid .row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
 .our_services  .icon {
     background: url(../images/img_services_border.png) no-repeat;
     width: 81px;
@@ -216,17 +269,232 @@ header .best_solution span {
     color: white;
 }
 
-.map iframe {
+.our_services .content_our_services, .blog_news .content_blog_news {
+    width: 1182px;
+}
+
+@media screen and (max-width: 1200px) {
+    .our_services .content_our_services{
+        width: 882px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .our_services .content_our_services{
+        width: 441px;
+    }
+}
+
+.blog_news .news_1 {
+    background-image: url(../images/img_ab_us_1.png);
+    width: 577px;
+    height: 385px;
+}
+
+.blog_news .row {
+    margin: 0;
+}
+.blog_news .news_1 .img_caption {
+    height: 100px;
+    width: 576px;
+    background-color: #1a8c8f;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.blog_news .news_2 {
+    background-image: url(../images/img_ab_us_2.png);
+    width: 279px;
+    height: 184px;
+    margin-right: 18px;
+    padding: 0;
+}
+
+.blog_news .news_3 {
+    background-image: url(../images/img_ab_us_3.png);
+    width: 279px;
+    height: 184px;
+}
+
+.blog_news .news_4 {
+    background-image: url(../images/img_ab_us_4.png);
+    width: 279px;
+    height: 184px;
+    margin-right: 18px;
+    margin-top: 18px;
+}
+
+.blog_news .news_5 {
+    background-image: url(../images/img_ab_us_5.png);
+    width: 279px;
+    height: 184px;
+    margin-top: 18px;
+}
+
+.blog_news .img_caption p {
+    margin-top: 0;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.blog_news .img_caption h1 {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.blog_news .news_2 .img_caption, .news_3 .img_caption,  .news_4 .img_caption, .news_5 .img_caption {
+    height: 30px;
+    width: 279px;
+    background-color: #3b3222;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.blog_news .news_2 .date h3, .news_3 .date h3, .news_4 .date h3, .news_5 .date h3  {
+    width: 110px;
+    height: 25px;
+    background-color: #449a94;
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.blog_news .news_2 .date,.news_3 .date,.news_4 .date, .news_5 .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blog_news .news_2 h2, .news_3 h2, .news_4 h2, .news_5 h2 {
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.blog_news .content_blog_news .content_center .first_line {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .blog_news .content_blog_news {
+        width: 595px;
+    }
+    .blog_news .content_blog_news .first_line {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+}
+
+.contact_us {
+    width: 100%;
+    background: url("../images/img_map.png") repeat-y;
+    border-bottom: 5px solid #00aba9;
+}
+.map .map_img {
     display: block;
     float: left;
 }
 
 .map .address {
     float: left;
+    font-family: "OpenSans-Regular";
+    width: 495px;
+    padding-left: 18px;
+}
+
+.map .address h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #ffffff;
+    font-family: "OpenSans-Regular";
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.map .address p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.address .address_company {
+    float: left;
+    text-align: left;
+}
+
+.address .cont_info_company {
+    float: right;
+    text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact_us .content_contact_us {
+        width: 775px;
+        /*height: 700px;*/
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact_us .content_contact_us {
+        width: 675px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .map .content_map {
+        width: 675px;
+        /*height: 700px;*/
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .map .content_map {
+        width: 675px;
+    }
+    .map .address h1 {
+        margin-top: 10px;
+    }
 }
 
 .footer {
+    height: 125px;
+    width: 100%;
+    background-color: #000;
     clear: both;
+    font-family: "AdventPro-Bold";
+}
+
+.footer .name_company span {
+    font-size: 24px;
+    color: #008287;
+}
+
+.footer .name_company span:first-child {
+    color: #fff;
+}
+
+.footer ul {
+    display: block;
+    float: left;
+}
+
+.footer ul li {
+    display: block;
+    float: left;
+}
+
+.footer ul li a {
+   line-height: 15px;
+    font-size: 38px;
 }
 
 
