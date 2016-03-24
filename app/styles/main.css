@@ -20,6 +20,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "OpenSans-Semibold";
+    src: url("/fonts/Open_Sans/OpenSans-Semibold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body * {
     margin: 0;
     padding: 0;
@@ -92,7 +99,19 @@ header .best_solution span {
 
 }
 
-#carousel-example-generic img{
+@media screen and (max-width: 1200px) {
+    header .content_header {
+        width: 965px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header .content_header {
+        width: 716px;
+    }
+}
+
+#carousel-example-generic img {
     width: 1920px;
     height: 600px;
     border-bottom: 5px solid #00aba9;
@@ -122,8 +141,6 @@ header .best_solution span {
         left: 0;
         right: 0;
     }
-
-
 }
 
 #carousel-example-generic .carousel-caption p span {
@@ -141,7 +158,6 @@ header .best_solution span {
     font-size: 20px;
     line-height: 36px;
 }
-
 
 .carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left {
     left: 20px;
@@ -207,12 +223,12 @@ header .best_solution span {
         width: 882px;
     }
 }
+
 @media screen and (max-width: 992px) {
     .about_company .content_about_company {
         width: 441px;
     }
 }
-
 
 .blog_news p {
     margin-bottom: 50px;
@@ -437,7 +453,6 @@ header .best_solution span {
 @media screen and (max-width: 1200px) {
     .contact_us .content_contact_us {
         width: 775px;
-        /*height: 700px;*/
     }
 }
 
@@ -458,7 +473,7 @@ header .best_solution span {
 
 @media screen and (max-width: 992px) {
     .map .content_map {
-        width: 675px;
+        width: 775px;
     }
     .map .address h1 {
         margin-top: 10px;
@@ -476,6 +491,8 @@ header .best_solution span {
 .footer .name_company span {
     font-size: 24px;
     color: #008287;
+    line-height: 125px;
+    padding-right: 7px;
 }
 
 .footer .name_company span:first-child {
@@ -484,7 +501,6 @@ header .best_solution span {
 
 .footer ul {
     display: block;
-    float: left;
 }
 
 .footer ul li {
@@ -493,9 +509,65 @@ header .best_solution span {
 }
 
 .footer ul li a {
-   line-height: 15px;
-    font-size: 38px;
+    line-height: 125px;
+    font-size: 14px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: #fff;
 }
 
+.footer ul.social {
+    display: table;
+    margin: 0 auto;
+}
+
+.footer .social li {
+    height: 25px;
+    margin: 0 3px 0 2px;
+}
+
+.footer .social li a {
+    padding: 0;
+}
+
+.footer .copy_right p {
+    font-size: 14px;
+    font-family: "OpenSans-Regular";
+    color: #fff;
+    line-height: 125px;
+}
+
+.footer .copy_right p span {
+    color: #008287;
+    font-family: "OpenSans-Semibold";
+}
+
+@media screen and (max-width: 1200px) {
+    .footer .content_footer {
+        width: 775px;
+    }
+
+    .footer .content_footer a, p {
+        line-height: 40px;
+    }
+
+    .footer .name_company span {
+        line-height: 40px;
+    }
+
+    .footer .copy_right p {
+        line-height: 67px;
+    }
+
+    .footer ul.social {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer .content_footer {
+        width: 675px;
+    }
+}
 
 
